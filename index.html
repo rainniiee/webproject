@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>A Little Something 🤍</title>
+
+<meta property="og:title" content="For You 🤍">
+<meta property="og:description" content="🤍">
+<meta property="og:image" content="https://rainniiee.github.io/webproject/image.jpg">
+<meta property="og:type" content="website">
+
+<meta name="description" content="🤍">
+
+<style>
+
+/* =========================
+   GENERAL PAGE
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background: linear-gradient(
+        145deg,
+        #fffdf5,
+        #fff4c7
+    );
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+/* =========================
+   MAIN CARD
+========================= */
+
+.container {
+
+    width: 100%;
+    max-width: 680px;
+
+    background: #fffef8;
+
+    border: 1px solid #eadb9c;
+
+    border-radius: 28px;
+
+    padding: 35px 24px;
+
+    text-align: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 10px 35px
+        rgba(80, 60, 10, 0.12);
+}
+
+
+/* =========================
+   EMOJIS
+========================= */
+
+.emoji {
+
+    position: absolute;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 27px;
+
+    opacity: 0.85;
+}
+
+
+.one {
+    top: 18px;
+    left: 20px;
+}
+
+.two {
+    top: 30px;
+    right: 22px;
+}
+
+.three {
+    bottom: 22px;
+    left: 24px;
+}
+
+.four {
+    bottom: 30px;
+    right: 25px;
+}
+
+
+/* =========================
+   OPENING
+========================= */
+
+h1 {
+
+    color: #745400;
+
+    font-size: 29px;
+
+    margin: 15px 0 10px;
+
+    line-height: 1.3;
+}
+
+
+.intro {
+
+    color: #745400;
+
+    font-style: italic;
+
+    margin-bottom: 26px;
+
+    font-size: 17px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+button {
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    border: 1px solid #b28a20;
+
+    background: #f5df8c;
+
+    color: #4d3900;
+
+    border-radius: 999px;
+
+    padding: 13px 25px;
+
+    font-size: 16px;
+
+    min-height: 48px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: 0.2s ease;
+}
+
+
+button:hover {
+
+    transform: translateY(-2px);
+
+    background: #efd36d;
+}
+
+
+/* =========================
+   LETTER SECTION
+========================= */
+
+.letter-section {
+
+    display: none;
+
+    margin-top: 10px;
+}
+
+
+.letter-section.show {
+
+    display: block;
+}
+
+
+/* =========================
+   LETTER
+========================= */
+
+.letter {
+
+    background: #fffdf3;
+
+    border: 1px solid #d8c274;
+
+    border-radius: 20px;
+
+    padding: 28px 23px;
+
+    line-height: 1.85;
+
+    max-height: 440px;
+
+    overflow-y: auto;
+
+    text-align: left;
+
+    /* Dark golden text */
+
+    color: #654900;
+
+    box-shadow:
+        0 5px 20px
+        rgba(80, 65, 20, 0.08);
+}
+
+
+/* Every paragraph */
+
+.letter p {
+
+    margin: 0 0 20px;
+
+    color: #654900;
+}
+
+
+/* First line */
+
+.letter strong {
+
+    color: #5a4100;
+}
+
+
+/* Signature */
+
+.signature {
+
+    text-align: right;
+
+    font-style: italic;
+}
+
+
+/* =========================
+   ONE MORE THING BUTTON
+========================= */
+
+.bottom-button {
+
+    display: none;
+
+    margin-top: 22px;
+}
+
+
+.bottom-button.show {
+
+    display: block;
+}
+
+
+/* =========================
+   FINAL MESSAGE
+========================= */
+
+.secret {
+
+    display: none;
+
+    padding: 30px 10px 10px;
+
+    text-align: center;
+}
+
+
+.secret.show {
+
+    display: block;
+}
+
+
+.moon {
+
+    font-size: 36px;
+
+    margin-bottom: 12px;
+}
+
+
+.secret-text {
+
+    color: #654900;
+
+    font-size: 28px;
+
+    font-style: italic;
+
+    line-height: 1.45;
+}
+
+
+.secret-hearts {
+
+    font-size: 23px;
+
+    margin-top: 16px;
+}
+
+
+/* =========================
+   PHONE VERSION
+========================= */
+
+@media (max-width: 450px) {
+
+    .container {
+
+        padding: 28px 15px;
+    }
+
+
+    h1 {
+
+        font-size: 25px;
+    }
+
+
+    .letter {
+
+        padding: 23px 18px;
+
+        max-height: 430px;
+    }
+
+
+    .secret-text {
+
+        font-size: 25px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+    <!-- Cute emojis -->
+
+    <span class="emoji one">♡</span>
+
+    <span class="emoji two">⭐</span>
+
+    <span class="emoji three">🎀</span>
+
+    <span class="emoji four">🐻</span>
+
+
+
+    <!-- =========================
+         OPENING SCREEN
+    ========================== -->
+
+    <div id="opening">
+
+        <h1>
+            ✦ A little something for you, my sweetheart ✦
+        </h1>
+
+
+        <div class="intro">
+
+            I made this just for you, my love. 🤍
+
+        </div>
+
+
+        <button onclick="openGift()">
+
+            🎁 Open your gift
+
+        </button>
+
+    </div>
+
+
+
+    <!-- =========================
+         LETTER
+    ========================== -->
+
+    <div
+        id="letterSection"
+        class="letter-section"
+    >
+
+
+        <div
+            id="letter"
+            class="letter"
+        >
+
+
+            <p>
+
+                <strong>
+                    My dearest, Remus.
+                </strong>
+
+            </p>
+
+
+            <p>
+
+                Happy birthday sweetheart🤍 i love you so much and i wish you all sweet things and happiness, i appreciate you so much and i love you to death🥹🤍 thank you for being the best part of my life and the person i love the most, even more than myself, i want nothing more than seeing you happy, comfortable and successful and to be there to witness it all and be a part of it my lovely. You’re amazing and you deserve so much more than what i could ever possibly give you but i hope this would make you happy😙🤍 
+
+            </p>
+
+
+            <p>
+
+                that night you asked me still plays in my mind always and it makes me happier and happier each time, no one ever made me feel the way you always do, loved, happy, i think of you all the time every night before bed, every morning i wake up, and every time i simply just need something to make life feel better even the slightly, youre the reason i wake up and the best thing to ever happen to me and i once again will say it, I love you🥹💛
+
+            </p>
+
+
+            <p>
+
+                lets spend every upcoming birthday and occasion together, love each other more and more on each one, i love you, my forever, and i'll make sure you always know and feel that 🤍💛 MUAH MUAH my babyyy 😙 
+
+            </p>
+
+
+            <p class="signature">
+
+                Your very loving wife.😋💛
+
+            </p>
+
+
+        </div>
+
+
+
+        <!-- =========================
+             ONE MORE THING
+        ========================== -->
+
+        <div
+            id="bottomButton"
+            class="bottom-button"
+        >
+
+            <button onclick="showSecret()">
+
+                one more thing ♡
+
+            </button>
+
+        </div>
+
+
+
+        <!-- =========================
+             FINAL MESSAGE
+        ========================== -->
+
+        <div
+            id="secret"
+            class="secret"
+        >
+
+
+            <div class="moon">
+
+                🌙
+
+            </div>
+
+
+            <div class="secret-text">
+
+                i love you to the moon and back
+
+            </div>
+
+
+            <div class="secret-hearts">
+
+                🤍💛🤍
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+
+/* Open the gift */
+
+function openGift() {
+
+    document
+        .getElementById("opening")
+        .style.display = "none";
+
+
+    document
+        .getElementById("letterSection")
+        .classList.add("show");
+
+}
+
+
+
+/* Detect when he reaches
+   the bottom of the letter */
+
+const letter =
+    document.getElementById("letter");
+
+
+letter.addEventListener(
+    "scroll",
+    function() {
+
+        if (
+            letter.scrollTop
+            +
+            letter.clientHeight
+            >=
+            letter.scrollHeight - 8
+        ) {
+
+            document
+                .getElementById("bottomButton")
+                .classList.add("show");
+
+        }
+
+    }
+);
+
+
+
+/* Show the final message */
+
+function showSecret() {
+
+    document
+        .getElementById("bottomButton")
+        .style.display = "none";
+
+
+    document
+        .getElementById("secret")
+        .classList.add("show");
+
+}
+
+</script>
+
+
+</body>
+
+</html>
